@@ -1,0 +1,11 @@
+#! /bin/bash
+
+mkdir .tmp && \
+cd .tmp && \
+git clone https://github.com/sourcelair/xterm.js && \
+cd xterm.js && \
+npm install && \
+npm run build:docs && \
+cd docs && \
+cp -a . ../../../ ** \
+rm -rf .tmp
