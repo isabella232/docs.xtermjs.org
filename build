@@ -7,5 +7,5 @@ cd xterm.js && \
 npm install && \
 npm run build:docs && \
 cd docs && \
-cp -a . ../../../ ** \
+cp -a . ../../../ && \
 rm -rf .tmp
